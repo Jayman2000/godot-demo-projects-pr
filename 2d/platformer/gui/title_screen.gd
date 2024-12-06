@@ -9,5 +9,9 @@ func _on_play_buttton_pressed() -> void:
 	get_tree().change_scene_to_packed(preload("res://game_singleplayer.tscn"))
 
 
+func _on_legal_notices_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://gui/legal_notices_screen.tscn")
+
+
 func _on_quit_button_pressed() -> void:
 	get_tree().quit()

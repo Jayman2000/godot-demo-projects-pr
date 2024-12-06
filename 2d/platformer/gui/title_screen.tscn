@@ -34,6 +34,12 @@ size_flags_horizontal = 4
 size_flags_vertical = 6
 text = "Play"
 
+[node name="LegalNoticesButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Legal Notices"
+
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -41,4 +47,5 @@ size_flags_vertical = 6
 text = "Quit"
 
 [connection signal="pressed" from="VBoxContainer/PlayButtton" to="." method="_on_play_buttton_pressed"]
+[connection signal="pressed" from="VBoxContainer/LegalNoticesButton" to="." method="_on_legal_notices_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cpibudgrjbnhf"]
+
+[node name="LegalNoticesTextBox" type="TextEdit"]
+theme_override_font_sizes/font_size = 12
+editable = false
+minimap_draw = true
+metadata/_tab_index = 1
