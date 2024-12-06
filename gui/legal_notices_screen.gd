@@ -43,8 +43,9 @@ func _ready() -> void:
 	
 	var godot_demo_projects := $"MarginContainer/Panel/MarginContainer/VBoxContainer/TabContainer/Godot Demo Projects"
 	text = ""
+	var file: FileAccess
 	for path: String in ["res://godot_demo_projects_readme.md", "res://godot_demo_projects_license.md", "res://platformer_2d_readme.md"]:
-		var file := FileAccess.open(path, FileAccess.READ)
+		file = FileAccess.open(path, FileAccess.READ)
 		if file == null:
 			push_error("Failed to open a file that we need for the legal notices screen.")
 		else:
@@ -55,7 +56,7 @@ func _ready() -> void:
 	
 	var source_code_pro_font := $"MarginContainer/Panel/MarginContainer/VBoxContainer/TabContainer/Source Code Pro font"
 	text = "License for the Source Code Pro font:\n"
-	var file := FileAccess.open("res://source_code_pro_license.md", FileAccess.READ)
+	file = FileAccess.open("res://source_code_pro_license.md", FileAccess.READ)
 	if file == null:
 		push_error("Failed to open a file that we need for the legal notices screen.")
 	else:
