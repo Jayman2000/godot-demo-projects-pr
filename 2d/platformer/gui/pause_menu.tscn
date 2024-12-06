@@ -49,10 +49,10 @@ layout_mode = 2
 size_flags_horizontal = 4
 text = "Resume"
 
-[node name="QuitButton" type="Button" parent="ColorRect/CenterContainer/VBoxContainer"]
+[node name="BackToTitleButton" type="Button" parent="ColorRect/CenterContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Quit"
+text = "Quit to Title Screen"
 
 [node name="CoinsCounter" parent="ColorRect" instance=ExtResource("4")]
 layout_mode = 0
@@ -62,4 +62,4 @@ offset_right = 105.0
 offset_bottom = 50.0
 
 [connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
-[connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="ColorRect/CenterContainer/VBoxContainer/BackToTitleButton" to="." method="_on_quit_button_pressed"]
