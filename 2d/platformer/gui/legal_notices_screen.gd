@@ -52,6 +52,16 @@ func _ready() -> void:
 			text += file.get_as_text().indent("\t")
 			text += "\n\n"
 	godot_demo_projects.text = text
+	
+	var source_code_pro_font := $"MarginContainer/Panel/MarginContainer/VBoxContainer/TabContainer/Source Code Pro font"
+	text = "License for the Source Code Pro font:\n"
+	var file := FileAccess.open("res://source_code_pro_license.md", FileAccess.READ)
+	if file == null:
+		push_error("Failed to open a file that we need for the legal notices screen.")
+	else:
+		text += file.get_as_text().indent("\t")
+	source_code_pro_font.text = text
+	
 
 
 func _on_back_to_title_screen_button_pressed() -> void:

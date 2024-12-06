@@ -1,7 +1,10 @@
-[gd_scene format=3 uid="uid://cpibudgrjbnhf"]
+[gd_scene load_steps=2 format=3 uid="uid://cpibudgrjbnhf"]
+
+[ext_resource type="FontFile" uid="uid://bxl1of8vp1dig" path="res://gui/source_code_pro.woff2" id="1_q7ps1"]
 
 [node name="LegalNoticesTextBox" type="TextEdit"]
-theme_override_font_sizes/font_size = 12
+theme_override_fonts/font = ExtResource("1_q7ps1")
+theme_override_font_sizes/font_size = 10
 editable = false
 minimap_draw = true
 metadata/_tab_index = 1
